@@ -1,0 +1,462 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.2/staging' branch; Version is '6000.2.6f1 (cc51a95c0300) revision 13390249'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-chanmetrey.hem" at "2025-12-22T01:43:54.1891141Z"
+OS: 'Windows 11  (10.0.26200) 64bit Professional' Language: 'en' Physical Memory: 15849 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2025-12-22T01:43:54Z
+
+COMMAND LINE ARGUMENTS:
+D:\UnityEditor\6000.2.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+D:/UnityProject/AircraftWar
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+53030
+-job-worker-count
+6
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: D:/UnityProject/AircraftWar
+D:/UnityProject/AircraftWar
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [42532]  Target information:
+
+Player connection [42532]  * "[IP] 10.120.208.57 [Port] 0 [Flags] 2 [Guid] 44407422 [EditorId] 44407422 [Version] 1048832 [Id] WindowsEditor(7,B5701-METREY) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [42532] Host joined multi-casting on [225.0.0.222:54997]...
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 48316, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+Player connection [42532] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 6
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.17.2'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-chanmetrey.hem"
+[Licensing::IpcConnector] LicenseClient-chanmetrey.hem channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-chanmetrey.hem-6000.2.6" at "2025-12-22T01:43:54.2687938Z"
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 48808, path: "D:/UnityEditor/6000.2.6f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.2+ff71f16
+  Session Id:              72c0f287c2f44718b83b65a1baad1705
+  Correlation Id:          98b64ca9ddaff10f102820ce5240738a
+  External correlation Id: 4521566617691344122
+  Machine Id:              39/wTax1GNoKjH6tbkpiRAY7RsQ=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-chanmetrey.hem-6000.2.6" (connect: 0.00s, validation: 0.00s, handshake: 0.02s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-chanmetrey.hem-6000.2.6-notifications" at "2025-12-22T01:43:54.2953036Z"
+[Licensing::Module] Licensing Background thread has ended after 0.11s
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 6.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.2.6f1 (cc51a95c0300)
+[Subsystems] Discovering subsystems at path D:/UnityEditor/6000.2.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProject/AircraftWar/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.1]
+    Renderer:        Intel(R) Graphics (ID=0x7d45)
+    Vendor:          Intel
+    VRAM:            9034 MB
+    App VRAM Budget: 8326 MB
+    Driver:          32.0.101.7026
+    Unified Memory Architecture
+Initialize mono
+Mono path[0] = 'D:/UnityEditor/6000.2.6f1/Editor/Data/Managed'
+Mono path[1] = 'D:/UnityEditor/6000.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/UnityEditor/6000.2.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/UnityEditor/6000.2.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/UnityEditor/6000.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 18968334084057-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Register platform support module: D:/UnityEditor/6000.2.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: D:/UnityEditor/6000.2.6f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Registered in 0.345491 seconds.
+- Loaded All Assemblies, in  8.163 seconds
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 2719 ms
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.464 seconds
+Domain Reload Profiling: 12636ms
+	BeginReloadAssembly (1124ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (111ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (494ms)
+	LoadAllAssembliesAndSetupDomain (6407ms)
+		LoadAssemblies (1195ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6269ms)
+			TypeCache.Refresh (6265ms)
+				TypeCache.ScanAssembly (5570ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (4465ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (4361ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3604ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (377ms)
+			ProcessInitializeOnLoadAttributes (264ms)
+			ProcessInitializeOnLoadMethodAttributes (107ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in 21.677 seconds
+Refreshing native plugins compatible for Editor in 4.41 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.977 seconds
+Domain Reload Profiling: 24651ms
+	BeginReloadAssembly (455ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (44ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (66ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (21087ms)
+		LoadAssemblies (19913ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1431ms)
+			TypeCache.Refresh (1308ms)
+				TypeCache.ScanAssembly (1247ms)
+			BuildScriptInfoCaches (92ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (2978ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2372ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (368ms)
+			SetLoadedEditorAssemblies (49ms)
+			BeforeProcessingInitializeOnLoad (670ms)
+			ProcessInitializeOnLoadAttributes (1184ms)
+			ProcessInitializeOnLoadMethodAttributes (96ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
+Refreshing native plugins compatible for Editor in 9.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6163 unused Assets / (3.2 MB). Loaded Objects now: 6879.
+Memory consumption went from 138.8 MB to 135.6 MB.
+Total: 75.575000 ms (FindLiveObjects: 42.014200 ms CreateObjectMapping: 1.958100 ms MarkObjects: 16.730200 ms  DeleteObjects: 14.867500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 521330.595670 seconds.
+  path: Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-a.prefab
+  artifactKey: Guid(9051477b658334c49ad46bc3a438ae61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-a.prefab using Guid(9051477b658334c49ad46bc3a438ae61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6f447fbbf5a384f45cbc876d7d4cae5') in 1.1245036 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-b.prefab
+  artifactKey: Guid(d203cfad792717a489bbadb5f66a6b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-b.prefab using Guid(d203cfad792717a489bbadb5f66a6b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dafae8e6a489a64fa776390caf65b44f') in 0.0527877 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-h.prefab
+  artifactKey: Guid(62509fffc85c1934aa16ad6266a0b03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-h.prefab using Guid(62509fffc85c1934aa16ad6266a0b03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8c2d55723c255dfcb0c891c670fc4a1') in 0.0611361 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-h_001.prefab
+  artifactKey: Guid(07a878e99e5f2cb489d4f731d8af1585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-h_001.prefab using Guid(07a878e99e5f2cb489d4f731d8af1585) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dcd285560db231f26f022658171da313') in 0.0578856 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-e_001.prefab
+  artifactKey: Guid(c336b26fe5658094cb8adea0de1754fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-e_001.prefab using Guid(c336b26fe5658094cb8adea0de1754fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c3acd9e045de2178c3505f3d82877df') in 0.051397 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-k.prefab
+  artifactKey: Guid(2dfe3fb997f73f44aace082d35d50b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-k.prefab using Guid(2dfe3fb997f73f44aace082d35d50b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '469e1aae639e77bbaa74fdba005abd18') in 0.0470402 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-j.prefab
+  artifactKey: Guid(ffd199b5b16df76488a56769006f2478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-j.prefab using Guid(ffd199b5b16df76488a56769006f2478) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f93a0494dceaabead1c7821bf95abd99') in 0.0469896 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-b_003.prefab
+  artifactKey: Guid(d2ee697629e0f034690e04e2c6b4c7c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-b_003.prefab using Guid(d2ee697629e0f034690e04e2c6b4c7c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0137f61d254ba3c5141e164e0c7b7a3') in 0.0424986 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-d.prefab
+  artifactKey: Guid(b9f0ab79f4dd6174aa8b4a946bf00242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-d.prefab using Guid(b9f0ab79f4dd6174aa8b4a946bf00242) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bfc19516e14af5c3bae3a074a3df70e0') in 0.0458398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-f_001.prefab
+  artifactKey: Guid(1fabb61835d9b2b40b14fc7175214b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-f_001.prefab using Guid(1fabb61835d9b2b40b14fc7175214b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af48716215c2bf23221e3017b15eacf4') in 0.0728482 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-g.prefab
+  artifactKey: Guid(96b7d5e273f1a8a4bb88135279ef4e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Generic Aircraft Models/Prefabs/Aircrafts/aircraft-g.prefab using Guid(96b7d5e273f1a8a4bb88135279ef4e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c32b03919ea376901b2e20caf55145b8') in 0.0482072 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.598309 seconds.
+  path: Assets/LeanTween/Examples/Material/LineGlowMaterial.mat
+  artifactKey: Guid(658f4eba50cce41098da6ed347d8d270) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Examples/Material/LineGlowMaterial.mat using Guid(658f4eba50cce41098da6ed347d8d270) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2c08533790a6f95e705bccb767f4ef99') in 1.4562827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/LeanTween/Examples/Models/Materials/SimpleAvatarBlue.mat
+  artifactKey: Guid(e86c6ee57cd4c400ea5852025bc7b7c3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Examples/Models/Materials/SimpleAvatarBlue.mat using Guid(e86c6ee57cd4c400ea5852025bc7b7c3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0179a8f0cf2ebf47f149b2a7c0c5d19a') in 0.0414575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/LeanTween/Examples/Scenes/GeneralCameraShake.unity
+  artifactKey: Guid(a99971c1311c6405d8d2897f3f42ad32) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Examples/Scenes/GeneralCameraShake.unity using Guid(a99971c1311c6405d8d2897f3f42ad32) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '51e23a0943eb86ddfb926406a467e3d5') in 0.0398011 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/LeanTween/Testing/Testing246.unity
+  artifactKey: Guid(07b38eaa49ca34ee3b10b3bcbd4ab991) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Testing/Testing246.unity using Guid(07b38eaa49ca34ee3b10b3bcbd4ab991) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1c07a6edd8e6d02b04ac5863c1eca643') in 0.0381687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/LeanTween/Examples/Scenes/PathSpline2d.unity
+  artifactKey: Guid(b5daea63c1cc14d709cb8f5dc7d19173) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Examples/Scenes/PathSpline2d.unity using Guid(b5daea63c1cc14d709cb8f5dc7d19173) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0c26ec71cfb0feedabc7c6547bd70421') in 0.0383447 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/LeanTween/Testing/TestingSequencer.unity
+  artifactKey: Guid(086642bd5cf3543fda601bb4ac7c0fb1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Testing/TestingSequencer.unity using Guid(086642bd5cf3543fda601bb4ac7c0fb1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a1e2542e454c8da198efd80849d97791') in 0.0401841 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/LeanTween/Examples/Scenes/GeneralEvents.unity
+  artifactKey: Guid(7e603302e334b4bd0bef351e0f1e050c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Examples/Scenes/GeneralEvents.unity using Guid(7e603302e334b4bd0bef351e0f1e050c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b3c7b095284e856052c3ef2dd322b6f1') in 0.0354796 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/LeanTween/Examples/Material/Graph.mat
+  artifactKey: Guid(a8a5e544bfa0d416892e87b12e93911b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Examples/Material/Graph.mat using Guid(a8a5e544bfa0d416892e87b12e93911b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '00238dce99549dea63caa045e769300e') in 0.0392059 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/LeanTween/Examples/Material/Ground.mat
+  artifactKey: Guid(c6784005974824c55b2b59b5bda24153) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Examples/Material/Ground.mat using Guid(c6784005974824c55b2b59b5bda24153) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'aad24f9f1ca36ae466ece641f9217f70') in 0.039431 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Generic Aircraft Models/Art/Materials/Mat-Ground-1.mat
+  artifactKey: Guid(8455befd8ed9c17489c64d099c322bac) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Generic Aircraft Models/Art/Materials/Mat-Ground-1.mat using Guid(8455befd8ed9c17489c64d099c322bac) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7c9a2e5375d3d058420280d050fd3d5f') in 0.0349127 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LeanTween/Examples/Material/Futoro_PlanetMaterial.mat
+  artifactKey: Guid(6b98784ec692b4e00a86fa1044ad8998) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Examples/Material/Futoro_PlanetMaterial.mat using Guid(6b98784ec692b4e00a86fa1044ad8998) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2e8485e4646f9b9da7154cd942744e95') in 0.0365634 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LeanTween/Examples/Models/Materials/SimpleAvatarHat.mat
+  artifactKey: Guid(894fe1d86fb5943f6a486e218bba2072) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Examples/Models/Materials/SimpleAvatarHat.mat using Guid(894fe1d86fb5943f6a486e218bba2072) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e7e6c7b902f230c562d3e8d817a8dcd1') in 0.0384335 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/LeanTween/Testing/Prefabs/BulletPrefab.prefab
+  artifactKey: Guid(b1b96c75a173942689678874bc28b06f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Testing/Prefabs/BulletPrefab.prefab using Guid(b1b96c75a173942689678874bc28b06f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '39f1b199f598246974bb326591d60fc5') in 0.0926448 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/LeanTween/Examples/Material/TrackCar.mat
+  artifactKey: Guid(3e55a11a05aa141af9f3be5e921cc003) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Examples/Material/TrackCar.mat using Guid(3e55a11a05aa141af9f3be5e921cc003) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'df4f5459c51bc4d81e66c3f443240b39') in 0.0399708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LeanTween/Examples/Scenes/GeneralAdvancedTechniques.unity
+  artifactKey: Guid(ed31b9589883b4d19a6bc0f50d57edec) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Examples/Scenes/GeneralAdvancedTechniques.unity using Guid(ed31b9589883b4d19a6bc0f50d57edec) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ab221b803097235a18604ae03579e170') in 0.0393051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/LeanTween/Examples/Material/DirectionalArrowMaterial.mat
+  artifactKey: Guid(79809b4fc57ad41b982c1dd5ceb812b2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Examples/Material/DirectionalArrowMaterial.mat using Guid(79809b4fc57ad41b982c1dd5ceb812b2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7958600465cfa4aa0f35609bd17261de') in 0.0367136 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/LeanTween/Examples/Scenes/GeneralSequencer.unity
+  artifactKey: Guid(28ab900ace00b47e39ad8fef65f3170a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/LeanTween/Examples/Scenes/GeneralSequencer.unity using Guid(28ab900ace00b47e39ad8fef65f3170a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b9769e8858ac0ad041149eae41e3e5e3') in 0.0354955 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
