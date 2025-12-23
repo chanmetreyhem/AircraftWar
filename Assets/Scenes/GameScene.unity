@@ -981,7 +981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f53eea09cbdf34094ba16d0e0de2a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tank
-  bullet: {fileID: 6111647439628809369, guid: e1e4359e9c30fd6468bf8a929c8089f9, type: 3}
+  bulletPre: {fileID: 0}
   turret: {fileID: 334571997}
   bulletPos: {fileID: 0}
   healthSlider: {fileID: 0}
