@@ -76,8 +76,8 @@ public class Aircraft : MonoBehaviour
     }
 
 
-  
 
+    float zEngel = -60;
     // Update is called once per frame
     void Update()
     {
@@ -85,7 +85,9 @@ public class Aircraft : MonoBehaviour
         var moveVector  = moveAction.ReadValue<Vector2>();
         if(transform.position.x < -xRange)  transform.position = new Vector3(-xRange,transform.position.y,transform.position.z);
         if(transform.position.x  > xRange) transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
-        transform.Translate(new Vector3(0,0, moveVector.x * moveSpeed * Time.deltaTime));
+        transform.Translate(new Vector3(0,0,  moveVector.x * moveSpeed * Time.deltaTime));
+        zEngel += moveVector.y * 100 * Time.deltaTime;
+        transform.localRotation = Quaternion.Euler(0f,90f, zEngel);
         if (currentHealth <= 0)
         {
             gameManager.PopupGameOver();

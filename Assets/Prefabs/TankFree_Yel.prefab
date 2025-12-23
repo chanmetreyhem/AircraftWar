@@ -766,7 +766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f53eea09cbdf34094ba16d0e0de2a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tank
-  bullet: {fileID: 4755581352242329537, guid: 79c22ab9e99dc3a41b7defcdcbdf07dc, type: 3}
+  bulletPre: {fileID: 7445961120564941351, guid: 79c22ab9e99dc3a41b7defcdcbdf07dc, type: 3}
   turret: {fileID: 748816448602182739}
   bulletPos: {fileID: 116685621058672959}
   healthSlider: {fileID: 3301377010249165714}

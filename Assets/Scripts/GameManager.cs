@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private Text boomAmountText,titleText,levelText,againButtonText;
     [SerializeField] private GameObject tank;
+
     public Image revealImage;
     public Slider healthSlider;
     public GameObject gameOverPanel;
@@ -24,8 +25,9 @@ public class GameManager : MonoBehaviour
    
     void Start()
     {
-       level = PlayerPrefs.GetInt(LEVEL_KEY,1) > 15 ? 15 : PlayerPrefs.GetInt(LEVEL_KEY, 1);
+        level = PlayerPrefs.GetInt(LEVEL_KEY,1) > 15 ? 15 : PlayerPrefs.GetInt(LEVEL_KEY, 1);
         levelText.text = "Level: " + level;
+
         for(int i = 0; i < level; i++)
         {
             clonePos.x = Random.Range(-xRange, xRange);
