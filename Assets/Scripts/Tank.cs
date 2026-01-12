@@ -26,6 +26,8 @@ public class Tank : MonoBehaviour
     private Quaternion targetRotation;
     private AudioSource audioSource;
 
+    float attackRange = 0;
+
     
     private bool collectionCheck;
     private void Awake()
@@ -66,7 +68,7 @@ public class Tank : MonoBehaviour
         player = FindAnyObjectByType<Aircraft>().gameObject;
         
     }
-
+    bool isPrint = true;
     private void Update()
     {
         if (FindAnyObjectByType<GameManager>().isEndGame) return;
@@ -74,9 +76,13 @@ public class Tank : MonoBehaviour
         if (player != null)
         {
             // Calculate the distance to the player
-            float distanceToPlayer = Vector3.Distance(turret.position, player.transform.position);
+              float distanceToPlayer = Vector3.Distance(turret.position, player.transform.position);
 
-         
+            if (isPrint) {
+                print("distant : " + distanceToPlayer);
+                isPrint = false;
+            }
+           
                 Vector3 directionToTarget = player.transform.position - turret.position;
 
                 Quaternion targetRotation = Quaternion.LookRotation(directionToTarget, Vector3.up);

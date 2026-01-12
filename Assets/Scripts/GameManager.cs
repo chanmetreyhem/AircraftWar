@@ -28,25 +28,25 @@ public class GameManager : MonoBehaviour
         level = PlayerPrefs.GetInt(LEVEL_KEY,1) > 15 ? 15 : PlayerPrefs.GetInt(LEVEL_KEY, 1);
         levelText.text = "Level: " + level;
 
-        for(int i = 0; i < level; i++)
-        {
-            clonePos.x = Random.Range(-xRange, xRange);
-            tanks.Add(Instantiate(tank,clonePos,Quaternion.Euler(new Vector3(0,Random.Range(-90,90),0))).gameObject.GetComponent<Tank>());
-        }
+        //for(int i = 0; i < level; i++)
+        //{
+        //    clonePos.x = Random.Range(-xRange, xRange);
+        //    tanks.Add(Instantiate(tank,clonePos,Quaternion.Euler(new Vector3(0,Random.Range(-90,90),0))).gameObject.GetComponent<Tank>());
+        //}
     }
 
     void Update()
     {
-        if (isEndGame) return;
-        if(tanks.Count <= 0)
-        {
-            isEndGame = true;
-            titleText.text = "You Win";
-            againButtonText.text = "Next";
-            level += 1;
-            PlayerPrefs.SetInt(LEVEL_KEY, level);
-            PopupGameOver();
-        }
+        //if (isEndGame) return;
+        //if(tanks.Count <= 0)
+        //{
+        //    isEndGame = true;
+        //    titleText.text = "You Win";
+        //    againButtonText.text = "Next";
+        //    level += 1;
+        //    PlayerPrefs.SetInt(LEVEL_KEY, level);
+        //    PopupGameOver();
+        //}
     }
 
     public void UpdateBoomAmountUI(float amount)

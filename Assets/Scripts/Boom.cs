@@ -15,7 +15,7 @@ public class Boom : MonoBehaviour
     {
         if (collision != null && collision.gameObject.CompareTag("Land") || collision.gameObject.CompareTag("Enemy")) {
             audioSource.PlayOneShot(clip);
-            Instantiate(m_Effect,transform.position,Quaternion.identity);
+            Instantiate(m_Effect,transform.position,Quaternion.Euler(new Vector3(-90,0,0)));
             Destroy(gameObject,0.05f);
         }
     }
