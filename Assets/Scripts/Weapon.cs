@@ -1,5 +1,7 @@
 ﻿
+using System.Runtime.Serialization.Formatters;
 using UnityEngine;
+using UnityEngine.Audio;
 
 
 public class Weapon : MonoBehaviour
@@ -19,14 +21,16 @@ public class Weapon : MonoBehaviour
     public float seekGain = 1.0f;             // Strength for steering
 
     [Header("Guidance")]
-    public float proximityDetonateRadius = 3f; // ជិតគម្លាតសំអាត/ចំគោល
+    private float proximityDetonateRadius = 0.1f; // ជិតគម្លាតសំអាត/ចំគោល
 
     private float startTime;
     private bool homingEnabled = false;
+    public GameObject effect;
 
+    private float lifeTime = 3f;
     void Awake()
     {
-       
+        lifeTime = 3f;
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;                // Missile ធម្មតាមិនធ្លាក់ក្រោមទំនាញ (game-style)
         startTime = Time.time;
@@ -39,6 +43,11 @@ public class Weapon : MonoBehaviour
             // បន្តទៅមុខ តាមទិសបច្ចុប្បន្ន
             rb.AddForce(transform.forward * boostForce, ForceMode.Acceleration);
             ClampSpeed();
+            lifeTime -= Time.deltaTime;
+            if(lifeTime < 0)
+            {
+                Destroy(gameObject);
+            }
             return;
         }
 
@@ -56,23 +65,23 @@ public class Weapon : MonoBehaviour
             return;
         }
 
-        // Phase 2: Homing (Seek)
+       
         Vector3 toTarget = (target.position - transform.position);
         float distance = toTarget.magnitude;
         Vector3 desiredDir = toTarget.normalized;
 
-        // បង្វែរទិសតាមអត្រា turn-rate
+      
         float maxRadiansThisStep = Mathf.Deg2Rad * turnRateDegPerSec * Time.fixedDeltaTime;
         Vector3 newDir = Vector3.RotateTowards(transform.forward, desiredDir, maxRadiansThisStep, 0f);
 
-        // Update orientation ឲ្យសមរម្យ
+       
         transform.rotation = Quaternion.LookRotation(newDir, Vector3.up);
 
-        // បន្ថែមល្បឿនតាមទិសមុខ
+       
         rb.AddForce(transform.forward * acceleration * seekGain, ForceMode.Acceleration);
         ClampSpeed();
 
-        // Proximity Detonation/Hit-check (optional)
+       
         if (distance <= proximityDetonateRadius)
         {
             OnHitTarget();
@@ -97,5 +106,17 @@ public class Weapon : MonoBehaviour
     public void SetTarget(Transform newTarget)
     {
         target = newTarget;
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other != null && other.gameObject.CompareTag("Land") || other.gameObject.CompareTag("Enemy"))
+        { 
+            var effectClone =  Instantiate(effect,transform.position,Quaternion.identity);
+            effectClone.transform.rotation = transform.rotation;
+            Destroy(effectClone,1f);
+            Destroy(gameObject, 0.05f);
+        }
     }
 }

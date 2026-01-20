@@ -11,12 +11,15 @@ public class Boom : MonoBehaviour
         audioSource  = GetComponent<AudioSource>();
         audioSource.playOnAwake = false;
     }
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision != null && collision.gameObject.CompareTag("Land") || collision.gameObject.CompareTag("Enemy")) {
+        if (other != null && other.gameObject.CompareTag("Land") || other.gameObject.CompareTag("Enemy"))
+        {
             audioSource.PlayOneShot(clip);
-            Instantiate(m_Effect,transform.position,Quaternion.Euler(new Vector3(-90,0,0)));
-            Destroy(gameObject,0.05f);
+            Instantiate(m_Effect, transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)));
+            Destroy(gameObject, 0.05f);
         }
     }
+  
 }

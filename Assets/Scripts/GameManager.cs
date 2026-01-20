@@ -1,8 +1,6 @@
 
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -21,24 +19,23 @@ public class GameManager : MonoBehaviour
     public List<Tank> tanks = new List<Tank>();
     public int level = 1;
     public const string LEVEL_KEY = "level";
-
-   
+  
     void Start()
     {
         level = PlayerPrefs.GetInt(LEVEL_KEY,1) > 15 ? 15 : PlayerPrefs.GetInt(LEVEL_KEY, 1);
         levelText.text = "Level: " + level;
 
-        //for(int i = 0; i < level; i++)
+        //for (int i = 0; i < level; i++)
         //{
         //    clonePos.x = Random.Range(-xRange, xRange);
-        //    tanks.Add(Instantiate(tank,clonePos,Quaternion.Euler(new Vector3(0,Random.Range(-90,90),0))).gameObject.GetComponent<Tank>());
+        //    tanks.Add(Instantiate(tank, clonePos, Quaternion.Euler(new Vector3(0, Random.Range(-90, 90), 0))).gameObject.GetComponent<Tank>());
         //}
     }
 
     void Update()
     {
         //if (isEndGame) return;
-        //if(tanks.Count <= 0)
+        //if (tanks.Count <= 0)
         //{
         //    isEndGame = true;
         //    titleText.text = "You Win";
